@@ -13,7 +13,7 @@ const Purchases = () => {
       const getPurchasedCourses = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:5000/user/purchasedCourses",
+            "https://course-app-backend-gold.vercel.app/user/purchasedCourses",
             {
               headers: {
                 token: `${localStorage.getItem("token")}`,

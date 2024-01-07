@@ -11,7 +11,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/user/signup",
+        "https://course-app-backend-gold.vercel.app/user/signup",
         data
       );
       navigate('/login');  

@@ -8,7 +8,7 @@ const CourseState = (props) => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/user/courses");
+        const response = await axios.get("https://course-app-backend-gold.vercel.app/user/courses");
         setCourses(response.data.course);
         
       } catch (error) {

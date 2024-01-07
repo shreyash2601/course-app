@@ -13,7 +13,7 @@ const CourseItem = ({ course, courseId }) => {
     try {
       if(user){
         const response = await axios.post(
-          `http://localhost:5000/user/courses/${courseId}`,
+          `https://course-app-backend-gold.vercel.app/user/courses/${courseId}`,
           null,
           {
             headers: {

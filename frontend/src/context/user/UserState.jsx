@@ -8,7 +8,7 @@ const UserState = (props) => {
     if(localStorage.getItem("token") !== ""){
       const getUser = async()=> {
 
-        const response = await axios.get("http://localhost:5000/user/getuser",
+        const response = await axios.get("https://course-app-backend-gold.vercel.app/user/getuser",
         {headers: {
           "token": `${localStorage.getItem("token")}`
         }}
