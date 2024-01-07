@@ -10,7 +10,6 @@ const Navbar = () => {
   const handleLogout = ()=> {
     localStorage.setItem("token", "");
     setUser(null);
-    window.location.reload();
   }
 
   return (
