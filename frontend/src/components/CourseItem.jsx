@@ -60,7 +60,7 @@ const CourseItem = ({ course, courseId }) => {
             <div style={{ display: "flex", justifyContent: "start" }}>
               {location.pathname !== "/purchases" ? <a className="btn btn-primary" onClick={handlePurchase}>
                 Purchase
-              </a> : <a className="btn btn-success">
+              </a> : <a href="https://www.youtube.com/watch?v=CvCiNeLnZ00&list=PL0Zuz27SZ-6M1Uopt6_VL3gf3cpMnwavm&index=7" className="btn btn-success" target="_blank">
                 Watch
               </a>}
             </div>
